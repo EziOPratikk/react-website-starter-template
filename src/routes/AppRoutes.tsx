@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import PublicLayout from "../layouts/PublicLayout.tsx";
-import NotFoundPage from "./NotFoundPage.tsx";
-import LandingPage from "../features/landing/pages/LandingPage.tsx";
+import NotFoundPage from "../pages/not-found/NotFoundPage.tsx";
+import HomePage from "../pages/home/HomePage.tsx";
 
 import { ROUTES } from "../shared/constants/routes.ts";
 
@@ -13,7 +13,7 @@ const AppRoutes = createBrowserRouter([
     children: [
       {
         path: ROUTES.HOME,
-        element: <LandingPage />,
+        element: <HomePage />,
       },
     ],
   },
